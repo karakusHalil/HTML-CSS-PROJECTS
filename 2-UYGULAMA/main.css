@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #F1F1F1;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    border: 1px solid silver;
+    margin: 0 auto;
+    background-color: #F1F1F1;
+}
+#menu{
+    width: 20%;
+    height: 100%;
+    border: 1px solid silver;
+    padding-top: 16px;
+    padding-left: 16px;
+    background-color: #fff;
+}
+#content{
+    padding-top: 16px;
+    padding-left: 16px;
+    width: 80%;
+    height: 100%;
+    border: 1px solid silver;
+    
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+#profile-image{
+    width: 90px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+#menu-list{
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+.menu-list-item{
+    padding: 8px 0px;
+    font-size: 0.9rem;
+}
+.menu-list-item i{
+    margin-right: 16px;
+}
+#social-accounts{
+    display: flex;
+    flex-direction: row;
+}
+#social-accounts li{
+    padding: 2.5px;
+    font-size: 16px !important;
+}
+#menu-header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#menu-title{
+    margin: 15px 0;
+}
