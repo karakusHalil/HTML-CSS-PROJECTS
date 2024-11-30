@@ -134,6 +134,67 @@
       #download:hover {
         background-color: #9e9e9e;
       }
+      #products{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .product{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+        background-color: white;
+        border: 1px solid silver;
+      }
+      .product-title{
+        text-align: center;
+        padding: 20px 0;
+        background-color: #616161;
+        color: white;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+      .product-features{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .product-features li{
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid silver;
+        color: silver;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .price{
+        text-align: center;
+        padding: 10px;
+      }
+      .price p:last-child{
+        color: silver;
+      }
+      .price-button{
+        width: 100%;
+        background-color: #F1F1F1;
+        text-align: center;
+        border-top: 1px solid silver;
+      }
+      .price-button button{
+        padding: 10px;
+        background-color: #009688;
+        margin: 10px 0;
+        border: 1px solid #009688;
+        color: white;
+      }
+      .pro-color{
+        background-color: #009688;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -310,9 +371,63 @@
             <div class="lower-skills" style="width: 80%">%80</div>
           </div>
           <button id="download">
-            <i class="fa-solid fa-download" style="margin-right: 7px; font-size: 12px;"></i>Download Resume
+            <i
+              class="fa-solid fa-download"
+              style="margin-right: 7px; font-size: 12px"
+            ></i
+            >Download Resume
           </button>
           <h4>How much I charge</h4>
+          <div id="products">
+            <div class="product">
+              <h3 class="product-title">Basic</h3>
+              <ul class="product-features">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>1GB Storage</li>
+                <li>Mail Support</li>
+              </ul>
+              <div class="price">
+                <p>$ 10</p>
+                <p>per month</p>
+              </div>
+              <div class="price-button">
+                <button>Sign Up</button>
+              </div>
+            </div>
+            <div class="product">
+              <h3 class="product-title pro-color">Pro</h3>
+              <ul class="product-features">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>50GB Storage</li>
+                <li>Endless Support</li>
+              </ul>
+              <div class="price">
+                <p>$ 25</p>
+                <p>per month</p>
+              </div>
+              <div class="price-button">
+                <button>Sign Up</button>
+              </div>
+            </div>
+            <div class="product">
+              <h3 class="product-title">Premium</h3>
+              <ul class="product-features">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>Unlimited Storage</li>
+                <li>Endless Support</li>
+              </ul>
+              <div class="price">
+                <p>$ 25</p>
+                <p>per month</p>
+              </div>
+              <div class="price-button">
+                <button>Sign Up</button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
