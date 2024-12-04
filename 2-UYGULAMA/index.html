@@ -14,6 +14,12 @@
     />
     <link rel="stylesheet" href="main.css" />
     <style>
+      #main-page{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+      }
       #header h1 {
         margin-bottom: 10px;
       }
@@ -107,6 +113,7 @@
         align-items: start;
         padding: 5px;
         padding-right: 7px;
+        margin-bottom: 32px;
       }
       #about h4,
       #about p {
@@ -192,8 +199,50 @@
         color: white;
       }
       .pro-color{
-        background-color: #009688;
+        background-color: #009688!important;
+        color: white!important;
+      }
+      #contact{
+        display: flex;
+        flex-direction: column;
+        padding: 24px 5px;
+        background-color: #9E9E9E;
+      }
+      #contact-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .contact-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33%;
+        padding: 16px 20px!important;
+        background-color: #616161;
         color: white;
+      }
+      .contact-item i{
+        margin: 10px 0;
+      }
+      #contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 5px;
+      }
+      #contact-form label, #contact-form input{
+        margin-bottom: 5px;
+      }
+      #contact-form input{
+        width: 100%;
+      }
+      #contact-form button{
+        background-color: black;
+        color: white;
+        padding: 4px 10px;
+        margin-top: 12px;
       }
     </style>
   </head>
@@ -229,6 +278,7 @@
           <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
       </div>
+      <div id="main-page">
       <div id="content">
         <header id="header">
           <h1>My Portfolio</h1>
@@ -429,7 +479,27 @@
             </div>
           </div>
         </section>
+
       </div>
+      <section id="contact">
+        <h4 style="margin-bottom: 12px;">Contact Me</h4>
+        <div id="contact-box">
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>email@gmail.com</span></div>
+          <div class="contact-item pro-color"><i class="fa-solid fa-location-dot"></i><span>Chicago, US</span></div>
+          <div class="contact-item"><i class="fa-solid fa-phone"></i><span>512312311</span></div>
+        </div>
+        <hr style="margin: 15px 0;">
+        <form id="contact-form">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" type="text" id="name">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email">
+          <label class="form-label" for="message">Message</label>
+          <input class="form-input" type="text" id="message">
+          <button><i class="fa-solid fa-paper-plane" style="margin-right: 10px;"></i>Send Message</button>
+        </form>
+      </section>
+    </div>
     </div>
   </body>
 </html>
