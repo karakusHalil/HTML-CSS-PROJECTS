@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="main.css" />
     <style>
-      #main-page{
+      #main-page {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -27,6 +27,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-bottom: 5px;
       }
       #nav span {
         padding: 5px;
@@ -141,13 +142,13 @@
       #download:hover {
         background-color: #9e9e9e;
       }
-      #products{
+      #products {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
       }
-      .product{
+      .product {
         display: flex;
         flex-direction: column;
         width: 30%;
@@ -155,7 +156,7 @@
         background-color: white;
         border: 1px solid silver;
       }
-      .product-title{
+      .product-title {
         text-align: center;
         padding: 20px 0;
         background-color: #616161;
@@ -164,12 +165,12 @@
         padding-top: 16px;
         padding-bottom: 16px;
       }
-      .product-features{
+      .product-features {
         margin: 0;
         padding: 0;
         width: 100%;
       }
-      .product-features li{
+      .product-features li {
         width: 100%;
         padding: 10px 0;
         border-bottom: 1px solid silver;
@@ -178,76 +179,186 @@
         font-size: 15px;
         line-height: 1.5;
       }
-      .price{
+      .price {
         text-align: center;
         padding: 10px;
       }
-      .price p:last-child{
+      .price p:last-child {
         color: silver;
       }
-      .price-button{
+      .price-button {
         width: 100%;
-        background-color: #F1F1F1;
+        background-color: #f1f1f1;
         text-align: center;
         border-top: 1px solid silver;
       }
-      .price-button button{
+      .price-button button {
         padding: 10px;
         background-color: #009688;
         margin: 10px 0;
         border: 1px solid #009688;
         color: white;
       }
-      .pro-color{
-        background-color: #009688!important;
-        color: white!important;
+      .pro-color {
+        background-color: #009688 !important;
+        color: white !important;
       }
-      #contact{
+      #contact {
         display: flex;
         flex-direction: column;
         padding: 24px 5px;
-        background-color: #9E9E9E;
+        background-color: #9e9e9e;
       }
-      #contact-box{
+      #contact-box {
         display: flex;
         flex-direction: row;
         justify-content: center;
       }
-      .contact-item{
+      .contact-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 33%;
-        padding: 16px 20px!important;
+        padding: 16px 20px !important;
         background-color: #616161;
         color: white;
       }
-      .contact-item i{
+      .contact-item i {
         margin: 10px 0;
       }
-      #contact-form{
+      #contact-form {
         display: flex;
         flex-direction: column;
         align-items: start;
         padding: 5px;
       }
-      #contact-form label, #contact-form input{
+      #contact-form label,
+      #contact-form input {
         margin-bottom: 5px;
       }
-      #contact-form input{
+      #contact-form input {
         width: 100%;
       }
-      #contact-form button{
+      #contact-form button {
         background-color: black;
         color: white;
         padding: 4px 10px;
         margin-top: 12px;
       }
+      @media screen and (max-width: 992px) {
+        .container{
+          flex-direction: column;
+        }
+        #menu{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+        #main-page{
+          width: 100%;
+        }
+        #menu-header{
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+        #menu-header p{
+          display: none;
+        }
+        #profile-image{
+          order: 3;
+          width: 65px;
+          height: 65px;
+          margin-right: 16px;
+          border-radius: 50%;
+        }
+        #menu-list{
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        #social-accounts{
+         width:  50%;
+         align-items: center;
+         justify-content: end;
+         padding-right: 16px;
+        }
+        .menu-list-item{
+          margin-right: 10px;
+        }
+        .menu-list-item i{
+          margin-right: 2px;
+        }
+        #content{
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 768px){
+        .card-box{
+          width: 50%;
+          padding: 5px;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        #header{
+          width: 100%;
+        }
+        .card-box{
+          width: 100%;
+          padding: 5px;
+        }
+        #nav-list-item-design{
+          display: none;
+        }
+        #nav-list-item-photos{
+          display: none;
+        }
+        #nav-list-item-art{
+          display: none;
+        }
+        #image-list{
+          flex-direction: column;
+        }
+        .image-box{
+          width: 100%;
+        }
+        #download{
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        #download i{
+          vertical-align: middle;
+        }
+        #products{
+          flex-direction: column;
+        }
+        .product{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        #contact-box{
+          flex-direction: column;
+        }
+        .contact-item{
+          width: 100%;
+        }
+        .button-send-message{
+          width: 100%;
+        }
+        .form-input{
+          font-size: 1.5rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container flex-row">
+    <div class="container">
       <div id="menu">
         <div id="menu-header">
           <img
@@ -279,227 +390,244 @@
         </ul>
       </div>
       <div id="main-page">
-      <div id="content">
-        <header id="header">
-          <h1>My Portfolio</h1>
-          <div id="nav">
-            <span>Filter:</span>
-            <ul id="nav-list">
-              <li class="nav-list-item"><a href="">ALL</a></li>
-              <li class="nav-list-item">
-                <a href=""><i class="fa-solid fa-gem"></i>Design</a>
-              </li>
-              <li class="nav-list-item">
-                <a href=""><i class="fa-regular fa-image"></i>Photos</a>
-              </li>
-              <li class="nav-list-item">
-                <a href=""><i class="fa-solid fa-map-pin"></i>Art</a>
-              </li>
-            </ul>
-          </div>
-        </header>
-        <section id="portfolio">
-          <div class="card-box">
-            <div class="card">
-              <img
-                src="./images/mountains.jpg"
-                class="card-img-top"
-                alt="mountains"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img
-                src="./images/lights.jpg"
-                class="card-img-top"
-                alt="mountains"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img
-                src="./images/nature.jpg"
-                class="card-img-top"
-                alt="mountains"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img src="./images/p1.jpg" class="card-img-top" alt="mountains" />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img src="./images/p2.jpg" class="card-img-top" alt="mountains" />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img
-                src="./images/bear.jpg"
-                class="card-img-top"
-                alt="mountains"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card - 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="image-list">
-          <div class="image-box">
-            <img src="./images/hugeProfil.jpg" alt="avatar" />
-          </div>
-          <div class="image-box" id="image-me2">
-            <img src="./images/me2.jpg" alt="me2" />
-          </div>
-        </section>
-        <section id="about">
-          <h4>About Me</h4>
-          <p>
-            Just me, myself and I, exploring the universe of unknownment. I have
-            a heart of love and an interest of lorem ipsum and mauris neque quam
-            blog. I want to share my world with you. Praesent tincidunt sed
-            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-            ultricies congue gravida diam non fringilla. Praesent tincidunt sed
-            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-            ultricies congue gravida diam non fringilla.
-          </p>
-          <h4>Technical Skills</h4>
-          <p>Photography</p>
-          <div class="upper-skills">
-            <div class="lower-skills" style="width: 95%">%95</div>
-          </div>
-          <p>Web Design</p>
-          <div class="upper-skills">
-            <div class="lower-skills" style="width: 85%">%85</div>
-          </div>
-          <p>Photoshop</p>
-          <div class="upper-skills">
-            <div class="lower-skills" style="width: 80%">%80</div>
-          </div>
-          <button id="download">
-            <i
-              class="fa-solid fa-download"
-              style="margin-right: 7px; font-size: 12px"
-            ></i
-            >Download Resume
-          </button>
-          <h4>How much I charge</h4>
-          <div id="products">
-            <div class="product">
-              <h3 class="product-title">Basic</h3>
-              <ul class="product-features">
-                <li>Web Design</li>
-                <li>Photography</li>
-                <li>1GB Storage</li>
-                <li>Mail Support</li>
+        <div id="content">
+          <header id="header">
+            <h1>My Portfolio</h1>
+            <div id="nav">
+              <span>Filter:</span>
+              <ul id="nav-list">
+                <li class="nav-list-item" id="nav-list-item-all"><a href="">ALL</a></li>
+                <li class="nav-list-item" id="nav-list-item-design">
+                  <a href=""><i class="fa-solid fa-gem"></i>Design</a>
+                </li>
+                <li class="nav-list-item" id="nav-list-item-photos">
+                  <a href=""><i class="fa-regular fa-image"></i>Photos</a>
+                </li>
+                <li class="nav-list-item" id="nav-list-item-art">
+                  <a href=""><i class="fa-solid fa-map-pin"></i>Art</a>
+                </li>
               </ul>
-              <div class="price">
-                <p>$ 10</p>
-                <p>per month</p>
-              </div>
-              <div class="price-button">
-                <button>Sign Up</button>
+            </div>
+          </header>
+          <section id="portfolio">
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/mountains.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="product">
-              <h3 class="product-title pro-color">Pro</h3>
-              <ul class="product-features">
-                <li>Web Design</li>
-                <li>Photography</li>
-                <li>50GB Storage</li>
-                <li>Endless Support</li>
-              </ul>
-              <div class="price">
-                <p>$ 25</p>
-                <p>per month</p>
-              </div>
-              <div class="price-button">
-                <button>Sign Up</button>
-              </div>
-            </div>
-            <div class="product">
-              <h3 class="product-title">Premium</h3>
-              <ul class="product-features">
-                <li>Web Design</li>
-                <li>Photography</li>
-                <li>Unlimited Storage</li>
-                <li>Endless Support</li>
-              </ul>
-              <div class="price">
-                <p>$ 25</p>
-                <p>per month</p>
-              </div>
-              <div class="price-button">
-                <button>Sign Up</button>
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/lights.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-      </div>
-      <section id="contact">
-        <h4 style="margin-bottom: 12px;">Contact Me</h4>
-        <div id="contact-box">
-          <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>email@gmail.com</span></div>
-          <div class="contact-item pro-color"><i class="fa-solid fa-location-dot"></i><span>Chicago, US</span></div>
-          <div class="contact-item"><i class="fa-solid fa-phone"></i><span>512312311</span></div>
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/nature.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/p1.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/p2.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/bear.jpg"
+                  class="card-img-top"
+                  alt="mountains"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card - 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="image-list">
+            <div class="image-box">
+              <img src="./images/hugeProfil.jpg" alt="avatar" />
+            </div>
+            <div class="image-box" id="image-me2">
+              <img src="./images/me2.jpg" alt="me2" />
+            </div>
+          </section>
+          <section id="about">
+            <h4>About Me</h4>
+            <p>
+              Just me, myself and I, exploring the universe of unknownment. I
+              have a heart of love and an interest of lorem ipsum and mauris
+              neque quam blog. I want to share my world with you. Praesent
+              tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta
+              lectus vitae, ultricies congue gravida diam non fringilla.
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+            <h4>Technical Skills</h4>
+            <p>Photography</p>
+            <div class="upper-skills">
+              <div class="lower-skills" style="width: 95%">%95</div>
+            </div>
+            <p>Web Design</p>
+            <div class="upper-skills">
+              <div class="lower-skills" style="width: 85%">%85</div>
+            </div>
+            <p>Photoshop</p>
+            <div class="upper-skills">
+              <div class="lower-skills" style="width: 80%">%80</div>
+            </div>
+            <button id="download">
+              <i
+                class="fa-solid fa-download"
+                style="margin-right: 7px; font-size: 12px"
+              ></i
+              >Download Resume
+            </button>
+            <h4>How much I charge</h4>
+            <div id="products">
+              <div class="product">
+                <h3 class="product-title">Basic</h3>
+                <ul class="product-features">
+                  <li>Web Design</li>
+                  <li>Photography</li>
+                  <li>1GB Storage</li>
+                  <li>Mail Support</li>
+                </ul>
+                <div class="price">
+                  <p>$ 10</p>
+                  <p>per month</p>
+                </div>
+                <div class="price-button">
+                  <button>Sign Up</button>
+                </div>
+              </div>
+              <div class="product">
+                <h3 class="product-title pro-color">Pro</h3>
+                <ul class="product-features">
+                  <li>Web Design</li>
+                  <li>Photography</li>
+                  <li>50GB Storage</li>
+                  <li>Endless Support</li>
+                </ul>
+                <div class="price">
+                  <p>$ 25</p>
+                  <p>per month</p>
+                </div>
+                <div class="price-button">
+                  <button>Sign Up</button>
+                </div>
+              </div>
+              <div class="product">
+                <h3 class="product-title">Premium</h3>
+                <ul class="product-features">
+                  <li>Web Design</li>
+                  <li>Photography</li>
+                  <li>Unlimited Storage</li>
+                  <li>Endless Support</li>
+                </ul>
+                <div class="price">
+                  <p>$ 25</p>
+                  <p>per month</p>
+                </div>
+                <div class="price-button">
+                  <button>Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <hr style="margin: 15px 0;">
-        <form id="contact-form">
-          <label class="form-label" for="name">Name</label>
-          <input class="form-input" type="text" id="name">
-          <label class="form-label" for="email">Email</label>
-          <input class="form-input" type="email" id="email">
-          <label class="form-label" for="message">Message</label>
-          <input class="form-input" type="text" id="message">
-          <button><i class="fa-solid fa-paper-plane" style="margin-right: 10px;"></i>Send Message</button>
-        </form>
-      </section>
-    </div>
+        <section id="contact">
+          <h4 style="margin-bottom: 12px">Contact Me</h4>
+          <div id="contact-box">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i><span>email@gmail.com</span>
+            </div>
+            <div class="contact-item pro-color">
+              <i class="fa-solid fa-location-dot"></i><span>Chicago, US</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i><span>512312311</span>
+            </div>
+          </div>
+          <hr style="margin: 15px 0" />
+          <form id="contact-form">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" />
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" />
+            <label class="form-label" for="message">Message</label>
+            <input class="form-input" type="text" id="message" />
+            <button class="button-send-message">
+              <i class="fa-solid fa-paper-plane" style="margin-right: 10px"></i
+              >Send Message
+            </button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
