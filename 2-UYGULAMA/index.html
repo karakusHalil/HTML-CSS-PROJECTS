@@ -19,6 +19,7 @@
         flex-direction: column;
         width: 80%;
         height: 100%;
+        position: relative;
       }
       #header h1 {
         margin-bottom: 10px;
@@ -344,11 +345,14 @@
           flex-direction: column;
         }
         #menu{
+          width: 100%;
+          background-color: #F1F1F1;
+        }
+        #menu-child{
+          position: static;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          width: 100%;
-          background-color: #F1F1F1;
         }
         #main-page{
           width: 100%;
@@ -460,6 +464,7 @@
   <body>
     <div class="container">
       <div id="menu">
+        <div id="menu-child">
         <div id="menu-header">
           <img
             id="profile-image"
@@ -471,13 +476,13 @@
         </div>
         <ul id="menu-list">
           <li class="menu-list-item">
-            <i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO
+            <i class="fa fa-th-large fa-fw w3-margin-right"></i><a href="#portfolio">PORTFOLIO</a>
           </li>
           <li class="menu-list-item">
-            <i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT
+            <i class="fa fa-user fa-fw w3-margin-right"></i><a href="#about">ABOUT</a>
           </li>
           <li class="menu-list-item">
-            <i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT
+            <i class="fa fa-envelope fa-fw w3-margin-right"></i><a href="#contact">CONTACT</a>
           </li>
         </ul>
         <ul id="social-accounts">
@@ -488,6 +493,7 @@
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
+      </div>
       </div>
       <div id="main-page">
         <div id="content">
