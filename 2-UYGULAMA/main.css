@@ -88,3 +88,448 @@ ul{
 #menu-title{
     margin: 15px 0;
 }
+#main-page {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+  #header h1 {
+    margin-bottom: 10px;
+  }
+  #nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  #nav span {
+    padding: 5px;
+    margin: 0px 16px 0px 0px;
+  }
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-list-item {
+    padding: 5px;
+  }
+  .nav-list-item a {
+    padding: 8px 16px;
+    margin: 0px 1px;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav-list-item i {
+    margin-right: 5px;
+  }
+  /* Bağlantılar için varsayılan stil */
+  #nav-list a {
+    color: black; /* Bağlantı metni siyah */
+    text-decoration: none; /* Alt çizgi yok */
+  }
+
+  /* Tıklanmış bağlantılar için stil (visited) */
+  #nav-list a:visited {
+    color: black; /* Tıklanmış bağlantılar yine siyah kalsın */
+  }
+
+  /* Tıklama sırasında aktif bağlantılar için stil */
+  #nav-list a:active {
+    color: black; /* Tıklama sırasında renk değişmesin */
+  }
+
+  /* Fare üzerine geldiğinde stil */
+  #nav-list a:hover {
+    color: blue; /* Hover durumunda mavi olabilir */
+  }
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+  .card-box {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 5px;
+  }
+  .card {
+    width: 100%;
+    background-color: #fff;
+  }
+  .card-img-top {
+    width: 100%;
+  }
+  .card-body {
+    padding: 5px;
+  }
+  #image-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-box {
+    width: 50%;
+    padding: 5px;
+  }
+  .image-box img {
+    width: 100%;
+  }
+  #image-me2 {
+    margin-right: 7px;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+    padding-right: 7px;
+    margin-bottom: 32px;
+  }
+  #about h4,
+  #about p {
+    margin: 5px 0;
+  }
+  .upper-skills {
+    width: 100%;
+    background-color: #9e9e9e;
+  }
+  .lower-skills {
+    background-color: #616161;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  #download {
+    padding: 10px;
+    background-color: #616161;
+    color: white;
+    border: 1px solid #616161;
+    margin: 10px 0px;
+    display: inline-flex;
+    align-items: center;
+  }
+  #download:hover {
+    background-color: #9e9e9e;
+  }
+  #products {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    background-color: white;
+    border: 1px solid silver;
+  }
+  .product-title {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #616161;
+    color: white;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .product-features {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .product-features li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+    color: silver;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .price {
+    text-align: center;
+    padding: 10px;
+  }
+  .price p:last-child {
+    color: silver;
+  }
+  .price-button {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid silver;
+  }
+  .price-button button {
+    padding: 10px;
+    background-color: #009688;
+    margin: 10px 0;
+    border: 1px solid #009688;
+    color: white;
+  }
+  .pro-color {
+    background-color: #009688 !important;
+    color: white !important;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 5px;
+    background-color: #9e9e9e;
+  }
+  #contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    padding: 16px 20px !important;
+    background-color: #616161;
+    color: white;
+  }
+  .contact-item i {
+    margin: 10px 0;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+  }
+  #contact-form label,
+  #contact-form input {
+    margin-bottom: 5px;
+  }
+  #contact-form input {
+    width: 100%;
+  }
+  #contact-form button{
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  #contact-form button:hover{
+    background-color: #CCCCCC;
+    color: black;
+    border: none;
+  }
+  #footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 16px;
+    color: white;
+    background-color: #616161;
+  }
+  #footer-part{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 0 8px;
+  }
+  #footer-part h3{
+    margin: 10px 0; 
+    font-size: 24px; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer-part-blog li{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .footer-part-blog li:hover{
+    background-color: #CCCCCC;
+  }
+  .line {
+    width: 100%;
+    height: 0.75px;
+    background-color: white;
+  }
+
+  .footer-part-blog img{
+    width: 50px;
+    margin-right: 16px;
+  }
+  .blog-text-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-part-tags p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-part-tags span{
+    display: inline-block;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    margin-right: 5px;
+    background-color: #9E9E9E;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .footer-part-tags span:hover{
+    background-color: black;
+    color: white;
+  }
+  #end-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0;
+    background-color: black;
+    color: white;
+  }
+  #end-page p{
+    font-size: 15px;
+    margin-right: 1px;
+  }
+  .end-poweredby-target{
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .end-poweredby-target:hover{
+    color: silver;
+  }
+  @media screen and (max-width: 992px) {
+    .container{
+      flex-direction: column;
+    }
+    #menu{
+      width: 100%;
+      background-color: #F1F1F1;
+    }
+    #menu-child{
+      position: static;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    #main-page{
+      width: 100%;
+    }
+    #menu-header{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    #menu-header p{
+      display: none;
+    }
+    #profile-image{
+      order: 3;
+      width: 65px;
+      height: 65px;
+      margin-right: 16px;
+      border-radius: 50%;
+    }
+    #menu-list{
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    #social-accounts{
+     width:  50%;
+     align-items: center;
+     justify-content: end;
+     padding-right: 16px;
+    }
+    .menu-list-item{
+      margin-right: 10px;
+    }
+    .menu-list-item i{
+      margin-right: 2px;
+    }
+    #content{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .card-box {
+      width: 50%;
+      padding: 5px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    #header {
+      width: 100%;
+    }
+    .card-box {
+      width: 100%;
+      padding: 5px;
+    }
+    #nav-list-item-design {
+      display: none;
+    }
+    #nav-list-item-photos {
+      display: none;
+    }
+    #nav-list-item-art {
+      display: none;
+    }
+    #image-list {
+      flex-direction: column;
+    }
+    .image-box {
+      width: 100%;
+    }
+    #download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    #download i {
+      vertical-align: middle;
+    }
+    #products {
+      flex-direction: column;
+    }
+    .product {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #contact-box {
+      flex-direction: column;
+    }
+    .contact-item {
+      width: 100%;
+    }
+    .button-send-message {
+      width: 100%;
+    }
+    .form-input {
+      font-size: 1.5rem;
+    }
+    #footer{
+      flex-direction: column;
+    }
+    #footer-part{
+      width: 100%;
+    }
+  }
