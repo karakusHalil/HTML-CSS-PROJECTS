@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Halil İbrahim Karakuş" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third app Team</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+      #header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      #logo{
+        padding: 8px 16px;
+        background-color: #009688;
+        color: white;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        transition: all 0.1s ease;
+      }
+      #logo:hover{
+        background-color: #CCCCCC;
+        color: black;
+      }
+      #logo i{
+        margin-right: 8px;
+        font-size: 13px;
+        line-height: 1;
+      }
+      #header-nav{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+      }
+      #nav{
+        display: flex;
+        flex-direction: row;
+      }
+      #nav-list{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: start;
+        align-items: center;
+      }
+      .nav-list-item{
+        padding: 8px 16px;
+      }
+      #search{
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: all 0.1s ease;
+      }
+      #search:hover{
+        background-color: #009688;
+      }
+      #search i{
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <div id="logo"><i class="fa-solid fa-house"></i>Logo</div>
+        <nav id="header-nav">
+            <ul id="nav-list">
+              <li class="nav-list-item">Team</li>
+              <li class="nav-list-item">Work</li>
+              <li class="nav-list-item">Price</li>
+              <li class="nav-list-item">Contact</li>
+            </ul>
+          <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>
