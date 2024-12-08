@@ -1,4 +1,4 @@
-/* GLOBAL CSS */
+/*  GLOBAL CSS  */
 
 * {
     margin: 0;
@@ -9,8 +9,8 @@
     width: 100%;
   }
 
-  /* HEADER */
-
+  /*  HEADER  */
+  
   #header{
     display: flex;
     flex-direction: row;
