@@ -67,3 +67,37 @@
   #search i{
     font-size: 13px;
   }
+
+        /* PAGE-İMAGE */
+        #page-images {
+          width: 100%;
+          min-height: 500px;
+          max-height: 600px;
+          /* background-image: url(./images/sailboat.jpg); */
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        #page-images img {
+          width: 100%;
+          vertical-align: middle;
+          min-height: 350px;
+          max-height: 600px;
+          position: relative;
+        }
+        .w3-button {
+          position: absolute;
+          bottom: 30px; 
+          left: 60px; 
+          background-color: black;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+          transform: scale(1.8); 
+          transition: transform 0.2s ease; 
+        }
+        .w3-button:hover {
+          background-color: #009688; 
+        }
