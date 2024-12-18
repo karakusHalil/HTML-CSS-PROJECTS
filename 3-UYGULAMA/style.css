@@ -220,3 +220,104 @@
         font-family: Verdana, sans-serif;
         
       }
+
+
+       /* PRICING */
+     #pricing{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 64px 8px;
+      background-color: white;
+      color: black;
+     }
+     #products{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+     }
+     .product{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33%;
+      border: 1px solid silver;
+      margin: 0 8px 16px;
+      transition: box-shadow 0.1s linear;
+     }
+     .product:hover{
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.1);
+     }
+     .product h3{
+      padding: 32px 16px;
+      font-size: 24px;
+      font-family: Verdana, sans-serif;
+      line-height: 1.5;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid silver;
+      background-color: black;
+      color: white;
+     }
+     .product ul{
+      list-style-type: none;
+      width: 100%;
+      
+     }
+     .product li{
+      padding: 16px 16px;
+      border-bottom: 1px solid silver;
+      font-size: 15px;
+      font-family: Verdana, sans-serif;
+      line-height: 1.5;
+      text-align: center;
+      width: 100%;
+     }
+     .price{
+      width: 100%;
+      padding-top: 16px!important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+     }
+     .price p{
+      margin: 10px 0!important;
+      font-size: 30px!important;
+      font-family: 'Segoe UI', Arial, sans-serif!important;
+      font-weight: 400;
+     }
+     .price span{
+      font-size: 15px;
+      font-family: Verdana, sans-serif;
+      opacity: 0.60;
+      padding-bottom: 16px;
+     }
+     .button-box{
+      padding: 32px 16px;
+      background-color: #F0F0F0;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      border-top: 1px solid silver;
+     }
+     .sign-up{
+      padding: 12px 24px;
+      background-color: #009688;
+      color: white;
+      border: 0.30px solid #009688;
+      font-size: 15px!important;
+      font-family: Verdana, sans-serif!important;
+      transition: background-color 0s linear;
+     }
+     .sign-up:hover{
+      background-color: #CCCCCC;
+      border: 0.30px solid #CCCCCC;
+      color: black;
+     }
+     #pro h3{
+      background-color: #666666;
+     }
