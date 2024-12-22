@@ -1,14 +1,14 @@
-# HTML-CSS-BOOTSTRAP Projects
+# HTML-CSS Projects
 
-This repository has been created to store my various web projects using **HTML**, **CSS**, and **Bootstrap**. The files here contain my personal projects, experiments, and different works related to web design and development. Each project is independent and may **not be mobile-friendly** or **not use Bootstrap**, as my goal is to test and learn different design approaches.
+This repository has been created to store my various web projects using **HTML**, **CSS**. The files here contain my personal projects, experiments, and different works related to web design and development. Each project is independent and may **not be mobile-friendly** or **not use CSS**, as my goal is to test and learn different design approaches.
 
 ## Content
 
-This repository contains various projects I've done with **HTML**, **CSS**, and **Bootstrap**. Projects include:
+This repository contains various projects I've done with **HTML**, **CSS**. Projects include:
 
 - Basic webpage designs
 - HTML and CSS experiments
-- Layouts and designs created using Bootstrap
+- Layouts and designs created using CSS
 - Various styles and color palettes used in web design
 
 ## Usage
@@ -20,5 +20,5 @@ This repository contains various projects I've done with **HTML**, **CSS**, and 
 ## Future Plans
 
 - I plan to add new projects focused on different web design concepts.
-- I will include more professional projects using **Bootstrap** and **CSS frameworks**.
+- I will include more professional projects using **CSS frameworks**.
 - I aim to continually update my projects and explore new techniques and design approaches.
