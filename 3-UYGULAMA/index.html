@@ -14,65 +14,19 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <style>
-      #footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        color: white;
-        padding: 40px 16px;
-        padding-bottom: 100px!important;
-      }
-      #footer ul{
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-      #footer ul li{
-        padding: 10px 16px;
-        margin: 0 4px;
-        font-size: 18px!important;
-        background-color: #009688;
-        color: white;
-      }
-      .footer-header{
-        margin: 10px 0;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        text-align: center;
-        line-height: 1.5;
-      }
-      .footer-span{
-        margin: 15px 0;
-        font-family: Verdana, sans-serif;
-        font-size: 15px;
-        line-height: 1.5;
-        text-align: center;
-      }
-      .end-poweredby-target{
-        color: white;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      .end-poweredby-target:hover{
-        color: silver;
-      }
+     
     </style>
   </head>
   <body>
     <div class="container">
       <header id="header">
-        <div id="logo"><i class="fa-solid fa-house"></i>Logo</div>
+        <div id="logo"><i class="fa-solid fa-house"></i><a href="#page-images" class="header-home-target">Logo</a></div>
         <nav id="header-nav">
           <ul id="nav-list">
-            <li class="nav-list-item">Team</li>
-            <li class="nav-list-item">Work</li>
-            <li class="nav-list-item">Price</li>
-            <li class="nav-list-item">Contact</li>
+            <li class="nav-list-item"><a href="#team" class="header-target">Team</a></li>
+            <li class="nav-list-item"><a href="#works" class="header-target">Work</a></li>
+            <li class="nav-list-item"><a href="#pricing" class="header-target">Price</a></li>
+            <li class="nav-list-item"><a href="#contact" class="header-target">Contact</a></li>
           </ul>
           <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
         </nav>
@@ -270,7 +224,8 @@
         <div class="footer-span">
           <span>Powered by</span>
           <a href="https://github.com/karakusHalil" title="GitHub" target="_blank" class="end-poweredby-target" style="font-size: 15px;">Halil İbrahim Karakuş</a>
-        </div>        
+        </div>
+      </footer>          
     </div>
   </body>
 </html>
